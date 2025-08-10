@@ -1,9 +1,31 @@
 
+ #  variable don't have fixed data type 
+ #  values(object) have data type which store in memory 
+ # variable are just references to object in memory 
+    #  x=5 ;type(5)==int
+    #  type (x)-> <class,'int'>
+ 
+ 
 # Integer : positive and negative
 x=10 ; print(x)
 
 # Float : decimal number
 pi=3.14 ; print(pi)
+
+s= 100.3+0.1+0.1-0.3
+s2= (0.1+0.1+0.1)-0.3
+print(s) #5.551115123125783e-17
+print(s2) #5.551115123125783e-17
+# we have to use  Decimal library
+#Floating-point precision error happens because numbers like 0.1 can't be exactly represented in binary.
+from decimal import Decimal
+ss = Decimal('0.1') + Decimal('0.1') + Decimal('0.1') - Decimal('0.3')
+ss2 = (Decimal('0.1') + Decimal('0.1') + Decimal('0.1') )- Decimal('0.3')
+print(ss)  # Output: 0.0
+print(ss2)  # Output: 0.0
+
+
+
 
 # Complex : real and imaginary part
 z=2+3j ; print(z)
