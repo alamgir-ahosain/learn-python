@@ -32,4 +32,4 @@ Your feedback is valuable! Please share your thoughts and suggestions for improv
 Contributions are welcome! Feel free to fork the repo and create a pull request.
 
 
-# 🚀 Happy Coding in Go!
+# 🚀 Happy Coding in Python!
