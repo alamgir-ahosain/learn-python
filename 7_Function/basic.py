@@ -11,37 +11,37 @@ def info1(name,dept):
 info1("Alamgir","CSE")  
     
 # use default parameter
-def info5(name="Default"): # always in the end
+def info2(name="Default"): # always in the end
    return f"Hello {name}"
 
-print(info5())
-print(info5("Alamgir"))
+print(info2())
+print(info2("Alamgir"))
 
 # Passing any number of arguments
 
     # touple
-def info6(*args):
+def info3(*args):
     print(args)
-print(info6("A","B","C"))    
+print(info3("A","B","C"))    
 
     # Dictionary
-def info8(**args):
+def info4(**args):
     print(args)
-print(info8(name="X",dept="Y"))     
+print(info4(name="X",dept="Y"))     
 
 # Return value
-def info2(x):
+def info5(x):
     return x+10
-print(info2(2))
+print(info5(2))
 
 
 # Return multiple value
-def info3():
+def info6():
     name="Alamgir"
     dept="CSE"
     sid="CE21012"
     return name,dept,sid
-name,dept,sid=info3()
+name,dept,sid=info6()
 print(name,dept,sid)
 
 
